@@ -109,4 +109,17 @@ public class DrawDemo
             pen.turn(72);
         }
     }
+    /**
+     * Dibujar un polígono regular con n lados
+     */
+    public void drawPolygon(int n)
+    {
+        Pen pen = new Pen(250,200,myCanvas);
+        int angulo = 360/n;
+        for (int i=0; i<n; i++) 
+        {
+            pen.move(100);
+            pen.turn(angulo);
+        }
+    }
 }
