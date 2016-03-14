@@ -122,4 +122,18 @@ public class DrawDemo
             pen.turn(angulo);
         }
     }
+    /**
+     * Dibujar un polígono regular con n lados
+     */
+    public void drawSpiral()
+    {
+        Pen pen = new Pen(250,200,myCanvas);
+        int incremento = 20;
+        for (int i=0; i<20; i++) 
+        {
+            pen.move(incremento);
+            pen.turn(90);
+            incremento = incremento + 5;
+        }
+    }
 }
